@@ -1,0 +1,28 @@
+﻿@page
+@model WebService.Pages.DisplayPostsModel
+@{
+    ViewData["Title"] = "DisplayPosts";
+}
+
+
+<form method="post">
+    <label asp-for=Name></label>
+    <input asp-for="Name" />
+
+    <button type="submit">Find Weather Conditions</button>
+</form>
+
+@if (Model.Rootobject != null)
+{
+    
+
+    <h4> @Model.Rootobject.name</h4>
+    
+    <h4> Temperature @Model.Rootobject.main.temp </h4>
+
+
+}
+else
+{
+    <h3> No Post yet</h3>
+}

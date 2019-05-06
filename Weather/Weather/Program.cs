@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace WebService
+namespace Weather
 {
     public class Program
     {
@@ -22,4 +22,3 @@ namespace WebService
                 .UseStartup<Startup>();
     }
 }
-
